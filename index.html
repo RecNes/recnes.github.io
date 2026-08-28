@@ -1,0 +1,391 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RecNes - Application Showdown | Portfolio</title>
+  <meta name="description" content="Personal portfolio of RecNes — a developer passionate about IoT, full-stack development, automation and creative tools. Explore featured projects and skills." />
+  <meta property="og:title" content="RecNes - Application Showdown" />
+  <meta property="og:description" content="Personal portfolio of RecNes — IoT, full-stack development, automation and creative tools." />
+  <meta property="og:image" content="images/logo.png" />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="images/logo.png" type="image/png" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- ======================== HEADER ======================== -->
+<header class="site-header" id="site-header">
+  <div class="container header-inner">
+    <a href="#hero" class="logo-link" aria-label="RecNes Home">
+      <img src="images/logo.png" alt="RecNes Logo" class="logo-img" />
+      <div>
+        <div class="brand-name">recnes.com</div>
+        <div class="brand-tagline">Kendi Kendime Dövünmelerim…</div>
+      </div>
+    </a>
+
+    <button class="menu-btn" id="menu-btn" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+      <a href="#about"    class="nav-link" data-section="about">About</a>
+      <a href="#projects" class="nav-link" data-section="projects">Projects</a>
+      <a href="#skills"   class="nav-link" data-section="skills">Skills</a>
+      <a href="#connect"  class="nav-link" data-section="connect">Connect</a>
+      <a href="https://www.recnes.com" class="nav-link" target="_blank" rel="noopener">Blog ↗</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ======================== HERO ======================== -->
+<section class="hero" id="hero">
+  <div class="container">
+    <div class="hero-grid">
+      <div class="hero-text">
+        <div class="hero-eyebrow">Developer &amp; Maker</div>
+        <h1 class="hero-title">RecNes<br />Application Showdown</h1>
+        <p class="hero-subtitle">
+          Welcome to my personal portfolio and project showcase! I build innovative applications,
+          IoT solutions, and creative tools that solve real-world problems.
+        </p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">Explore Projects</a>
+          <a href="#connect"  class="btn btn-outline">Get in Touch</a>
+        </div>
+      </div>
+
+      <div class="hero-img-wrap">
+        <div class="hero-glow-ring"></div>
+        <img src="images/logo.png" alt="RecNes" class="hero-avatar" />
+      </div>
+    </div>
+
+    <!-- About cards -->
+    <div class="about-cards reveal-group" id="about">
+      <div class="about-card reveal-child">
+        <div class="about-card-icon">🔌</div>
+        <h4>IoT &amp; Hardware</h4>
+        <p>Smart home automation and multi-device monitoring systems</p>
+      </div>
+      <div class="about-card reveal-child">
+        <div class="about-card-icon">🌐</div>
+        <h4>Full-Stack Dev</h4>
+        <p>Building seamless web experiences end-to-end</p>
+      </div>
+      <div class="about-card reveal-child">
+        <div class="about-card-icon">🎨</div>
+        <h4>Creative Tools</h4>
+        <p>Unique applications that combine functionality with fun</p>
+      </div>
+      <div class="about-card reveal-child">
+        <div class="about-card-icon">⚙️</div>
+        <h4>Automation</h4>
+        <p>Creating tools that streamline daily tasks and workflows</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================== PROJECTS ======================== -->
+<section class="section" id="projects">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-label">🚀 Featured Projects</span>
+      <h2 class="section-title">What I've Built</h2>
+      <p class="section-desc">
+        A curated collection of projects spanning IoT, web development, utilities and creative experiments.
+      </p>
+    </div>
+
+    <div class="projects-grid reveal-group">
+
+      <!-- 1. Nunti -->
+      <article class="project-card reveal-child">
+        <div class="project-thumb">
+          <img src="images/nunti.png" alt="Nunti — notification and messaging platform" loading="lazy" />
+          <span class="project-num">01</span>
+        </div>
+        <div class="project-body">
+          <h3 class="project-title">Nunti</h3>
+          <p class="project-desc">
+            A powerful notification and messaging platform designed to streamline communication
+            workflows with reliable message delivery and an intuitive interface.
+          </p>
+          <div class="project-features-label">Key Features</div>
+          <ul class="project-features">
+            <li>Real-time notifications</li>
+            <li>Message queuing and delivery</li>
+            <li>User-friendly dashboard</li>
+            <li>Integration-ready architecture</li>
+          </ul>
+          <div class="project-footer">
+            <a href="https://github.com/RecNes/nunti" target="_blank" rel="noopener" class="project-link">
+              📁 Repository
+            </a>
+            <span class="project-arrow" aria-hidden="true">→</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- 2. RPi Monitor -->
+      <article class="project-card reveal-child">
+        <div class="project-thumb">
+          <img src="images/monitor.png" alt="Multi-Device RPi Status Monitor" loading="lazy" />
+          <span class="project-num">02</span>
+        </div>
+        <div class="project-body">
+          <h3 class="project-title">Multi-Device RPi Status Monitor</h3>
+          <p class="project-desc">
+            A comprehensive monitoring solution for Raspberry Pi devices across multiple machines,
+            showcasing IoT integration and real-time system monitoring.
+          </p>
+          <div class="project-features-label">Key Features</div>
+          <ul class="project-features">
+            <li>Real-time monitoring across multiple RPi devices</li>
+            <li>Performance metrics &amp; resource tracking</li>
+            <li>Centralized device management dashboard</li>
+            <li>System health alerts and remote configuration</li>
+          </ul>
+          <div class="project-footer">
+            <a href="https://github.com/RecNes/multi-device-rpi-status-monitor" target="_blank" rel="noopener" class="project-link">
+              📁 Repository
+            </a>
+            <span class="project-arrow" aria-hidden="true">→</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- 3. Smart Floor Lamp -->
+      <article class="project-card reveal-child">
+        <div class="project-thumb">
+          <img src="images/smart_lamp.png" alt="Smart Floor Lamp Project" loading="lazy" />
+          <span class="project-num">03</span>
+        </div>
+        <div class="project-body">
+          <h3 class="project-title">Smart Floor Lamp Project</h3>
+          <p class="project-desc">
+            An intelligent IoT project bringing automation to home lighting — control and customize
+            your lighting experience with smart features and full home-assistant connectivity.
+          </p>
+          <div class="project-features-label">Key Features</div>
+          <ul class="project-features">
+            <li>WiFi-enabled smart control</li>
+            <li>Brightness and color adjustments</li>
+            <li>Scheduling and automation rules</li>
+            <li>Energy efficiency optimization</li>
+          </ul>
+          <div class="project-footer">
+            <a href="https://github.com/RecNes/Smart-Floor-Lamp-Project" target="_blank" rel="noopener" class="project-link">
+              📁 Repository
+            </a>
+            <span class="project-arrow" aria-hidden="true">→</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- 4. File2Mail -->
+      <article class="project-card reveal-child">
+        <div class="project-thumb">
+          <img src="images/file2mail.png" alt="File2Mail" loading="lazy" />
+          <span class="project-num">04</span>
+        </div>
+        <div class="project-body">
+          <h3 class="project-title">File2Mail</h3>
+          <p class="project-desc">
+            A handy utility that simplifies file sharing by converting files into email-ready
+            formats. Perfect for quick file distribution and team collaboration.
+          </p>
+          <div class="project-features-label">Key Features</div>
+          <ul class="project-features">
+            <li>Fast file conversion &amp; batch processing</li>
+            <li>Email-optimized formatting</li>
+            <li>Multiple file format support</li>
+            <li>Secure file handling</li>
+          </ul>
+          <div class="project-footer">
+            <a href="https://github.com/RecNes/File2Mail" target="_blank" rel="noopener" class="project-link">
+              📁 Repository
+            </a>
+            <span class="project-arrow" aria-hidden="true">→</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- 5. Random Bird Name Generator -->
+      <article class="project-card reveal-child">
+        <div class="project-thumb">
+          <img src="images/bird_generator.png" alt="Random Bird Name Generator" loading="lazy" />
+          <span class="project-num">05</span>
+        </div>
+        <div class="project-body">
+          <h3 class="project-title">Random Bird Name Generator</h3>
+          <p class="project-desc">
+            A fun and creative tool generating unique bird-inspired names. Great for game development,
+            creative writing, or just for entertainment — simple, fast and delightful.
+          </p>
+          <div class="project-features-label">Key Features</div>
+          <ul class="project-features">
+            <li>Generates random bird-inspired names</li>
+            <li>Customizable naming parameters</li>
+            <li>Lightweight &amp; fast — no dependencies</li>
+            <li>Perfect for games and creative projects</li>
+          </ul>
+          <div class="project-footer">
+            <a href="https://github.com/RecNes/RandomBirdNameGenerator" target="_blank" rel="noopener" class="project-link">
+              📁 Repository
+            </a>
+            <span class="project-arrow" aria-hidden="true">→</span>
+          </div>
+        </div>
+      </article>
+
+    </div><!-- /.projects-grid -->
+  </div>
+</section>
+
+<!-- ======================== SKILLS ======================== -->
+<section class="section" id="skills">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-label">🛠️ Skills &amp; Technologies</span>
+      <h2 class="section-title">My Toolkit</h2>
+      <p class="section-desc">
+        Languages, frameworks and tools I use to bring ideas to life — from hardware to the cloud.
+      </p>
+    </div>
+
+    <div class="skills-grid reveal-group">
+
+      <div class="skill-category reveal-child">
+        <div class="skill-cat-header">
+          <span class="skill-cat-icon">💬</span>
+          <h3 class="skill-cat-title">Languages</h3>
+        </div>
+        <div class="skill-tags">
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">JavaScript</span>
+          <span class="skill-tag">TypeScript</span>
+          <span class="skill-tag">Rust</span>
+          <span class="skill-tag">C</span>
+          <span class="skill-tag">C++</span>
+        </div>
+      </div>
+
+      <div class="skill-category reveal-child">
+        <div class="skill-cat-header">
+          <span class="skill-cat-icon">🔌</span>
+          <h3 class="skill-cat-title">IoT &amp; Hardware</h3>
+        </div>
+        <div class="skill-tags">
+          <span class="skill-tag">Raspberry Pi</span>
+          <span class="skill-tag">Arduino</span>
+          <span class="skill-tag">NodeMCU</span>
+          <span class="skill-tag">ESP8266</span>
+          <span class="skill-tag">Sensor Integration</span>
+          <span class="skill-tag">Home Assistant</span>
+        </div>
+      </div>
+
+      <div class="skill-category reveal-child">
+        <div class="skill-cat-header">
+          <span class="skill-cat-icon">🌐</span>
+          <h3 class="skill-cat-title">Web Development</h3>
+        </div>
+        <div class="skill-tags">
+          <span class="skill-tag">Full-Stack Dev</span>
+          <span class="skill-tag">REST APIs</span>
+          <span class="skill-tag">Responsive Design</span>
+          <span class="skill-tag">WordPress</span>
+        </div>
+      </div>
+
+      <div class="skill-category reveal-child">
+        <div class="skill-cat-header">
+          <span class="skill-cat-icon">🗄️</span>
+          <h3 class="skill-cat-title">Databases</h3>
+        </div>
+        <div class="skill-tags">
+          <span class="skill-tag">PostgreSQL</span>
+          <span class="skill-tag">MySQL</span>
+          <span class="skill-tag">SQLite</span>
+          <span class="skill-tag">NoSQL</span>
+        </div>
+      </div>
+
+      <div class="skill-category reveal-child">
+        <div class="skill-cat-header">
+          <span class="skill-cat-icon">⚙️</span>
+          <h3 class="skill-cat-title">DevOps &amp; Tools</h3>
+        </div>
+        <div class="skill-tags">
+          <span class="skill-tag">Docker</span>
+          <span class="skill-tag">Git</span>
+          <span class="skill-tag">CI/CD</span>
+          <span class="skill-tag">Linux</span>
+          <span class="skill-tag">Bash</span>
+        </div>
+      </div>
+
+      <div class="skill-category reveal-child">
+        <div class="skill-cat-header">
+          <span class="skill-cat-icon">🤖</span>
+          <h3 class="skill-cat-title">Generative AI</h3>
+        </div>
+        <div class="skill-tags">
+          <span class="skill-tag">Ollama</span>
+          <span class="skill-tag">LLMs</span>
+          <span class="skill-tag">Open Web UI</span>
+          <span class="skill-tag">MCP Protocol</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ======================== CONNECT ======================== -->
+<section class="section" id="connect">
+  <div class="container">
+    <div class="connect-box reveal">
+      <h2 class="connect-title">Let's Collaborate 🤝</h2>
+      <p class="connect-subtitle">
+        I'm always open to new projects, contributions and interesting conversations.
+        Star something, report a bug, or just say hi!
+      </p>
+      <div class="connect-btns">
+        <a href="https://github.com/RecNes" target="_blank" rel="noopener" class="connect-btn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58v-2.03c-3.34.72-4.04-1.61-4.04-1.61-.55-1.39-1.33-1.76-1.33-1.76-1.09-.74.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.5.99.11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.17 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02.005 2.04.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.65.24 2.87.12 3.17.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58C20.57 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/>
+          </svg>
+          @RecNes on GitHub
+        </a>
+        <a href="https://www.recnes.com" target="_blank" rel="noopener" class="connect-btn">
+          ✍️ Read the Blog
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================== FOOTER ======================== -->
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <img src="images/logo.png" alt="RecNes" class="footer-logo" />
+      <div class="footer-brand-text">
+        <h3>recnes.com</h3>
+        <p>Kendi Kendime Dövünmelerim…</p>
+      </div>
+    </div>
+    <div class="footer-copy">
+      <p>Built with ❤️ — each project has its own license.</p>
+      <p>Thanks for visiting! Happy coding 🎉</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
